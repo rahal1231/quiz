@@ -1,0 +1,9 @@
+which planet is know as the red planet?,Earth,Mars,Jupiter,Venus,2
+what is 5 x 8?,45,35,40,27,3
+what is the capital of USA?,Washington,New York,Texas,Alaska,1
+what is the tallest mountain in the world?,Denali,K2,Fuji,Everest,4
+who invented the light bulb?,Thomas Edison,James Watt,Benjamin Franklin,Cai Lun,1
+where is the Taj Mahal located?,India,Canada,Dubai,Indonesia,1
+what is the largest aimal on earth?,Blue Whale,Elephent,Hippopatamus,Rhinoceros,1
+how many bones are there in a human being?,206,200,111,123,1
+who created python?,Guido van Rossum,Elon Musk,Albert Einstein,Bill Gates,1
