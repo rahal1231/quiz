@@ -64,6 +64,50 @@ def draw():
     for j in answer_boxes:
         screen.draw.textbox(question[i].strip(),j,color="white")
         i+=1
+def on_mouse_down(pos):
+    i=1
+    for j in answer_boxes:
+        if j.collidepoint(pos):
+            if i is int(question[5]):
+                correct_answer()
+            else:
+                gameover()
+        i+=1
+    if skip_box.collidepoint(pos):
+        skip_question()
+def correct_answer():
+    global score,question,tiem_left,questions
+    score+=1
+    if questions:
+        question=read_next_question()
+        tiem_left=10
+    else:
+        gameover()
+def gameover():
+    global question,tiem_left,game_over
+    meesage=f"game over you got {score} questions correct"
+    question=[meesage,"-","-","-","-",5]
+    tiem_left=0
+    game_over=True
+def skip_question():
+    global question,tiem_left
+    if questions and not game_over:
+        question=read_next_question()
+        tiem_left=10
+    else:
+        gameover()
+
+def update_time():
+    global tiem_left
+    if tiem_left:
+        tiem_left-=1
+    else:
+        gameover()
+clock.schedule_interval(update_time,1)
+
+
+
+    
 
     
 
